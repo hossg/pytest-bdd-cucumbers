@@ -1,3 +1,7 @@
+# A sample module implementing some valuable businses fucntionality!
+#
+# In this case, the module simply provides some convenience functions for managing the number of cucumbers
+# in a dict object, along with the number eaten, and the number remaining
 
 def create_cucumber_eater(start):
     cucumbers = {'start': start, 'eaten': 0, 'left':start}
