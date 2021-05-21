@@ -26,8 +26,8 @@ def eat_cucumbers(cucumbers, eat):
     for i in range(eat):
         cucumber_eater.eat_cucumber(cucumbers)
 
-@then('I should have <left> cucumbers')
-@then(parsers.parse("I should have {left:d} cucumbers"))
+@then('I should have <left> cucumbers remaining')
+@then(parsers.parse("I should have {left:d} cucumbers remaining"))
 def should_have_left_cucumbers(cucumbers, left):
     assert isinstance(left, int)
     assert cucumber_eater.get_cucumbers_remaining(cucumbers) == left

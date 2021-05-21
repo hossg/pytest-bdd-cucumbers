@@ -5,19 +5,19 @@ Feature: Eating Cucumbers
         Given there are 5 cucumbers
         When I eat 3 cucumbers
         And I eat 2 cucumbers
-        Then I should have 0 cucumbers
+        Then I should have 0 cucumbers remaining
         Then all cucumbers should be accounted for
 
     Scenario: Eating some of the cucumbers
         Given there are 5 cucumbers
         When I eat 3 cucumbers
-        Then I should have 2 cucumbers
+        Then I should have 2 cucumbers remaining
         Then all cucumbers should be accounted for
 
     Scenario Outline: Eat cucumbers
         Given there are <start> cucumbers
         When I eat <eat> cucumbers
-        Then I should have <left> cucumbers
+        Then I should have <left> cucumbers remaining
 
         Examples:
         | start | eat | left |
