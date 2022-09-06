@@ -5,11 +5,10 @@ on:
     paths: "src/**"
 
 jobs:
-  run-tests-and-linter:
-    defaults:
-      run:
-        working-directory: src
+  run-tests:
+  
     runs-on: ubuntu-latest
+    
     steps:
       # Check out repo
       - uses: actions/checkout@v2
