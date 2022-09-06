@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pytest-bdd-cucumbers"
+version = "1.0.1"
+description = "A small demonstraton package to show the usage of pytest-bdd"
+authors = ["hossg <hossg@users.noreply.github.com>"]
+#readme = "README.md"
+packages = [{include = "cucumber_eater"}]
+
+[tool.poetry.dependencies]
+python = ">3.7"
+pytest-bdd = "^6.0.1"
+pip = "^22.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

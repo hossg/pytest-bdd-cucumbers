@@ -1,6 +1,6 @@
 import re
 from pytest_bdd import scenario, given, when, then, parsers, scenarios
-import cucumber_eater
+from cucumber_eater import *
 
 # scenarios('.')
 @scenario("eating_cucumbers.feature", "Eating all the cucumbers")
@@ -8,7 +8,7 @@ import cucumber_eater
 def test_eating_cucumbers():
     pass
 
-@scenario("eating_cucumbers.feature", "Eat cucumbers", example_converters=dict(start=int, eat=int, left=int))
+@scenario("eating_cucumbers.feature", "Eat cucumbers")
 def test_eating_cucumbers_examples():
     pass
 
