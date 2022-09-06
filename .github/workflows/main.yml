@@ -7,6 +7,10 @@ on:
 
 jobs:
   run-tests:
+    
+    defaults:
+      run:
+        working-directory: src
   
     runs-on: ubuntu-latest
     
