@@ -2,15 +2,7 @@ import re
 from pytest_bdd import scenario, given, when, then, parsers, scenarios
 from cucumber_eater import *
 
-# scenarios('.')
-@scenario("eating_cucumbers.feature", "Eating all the cucumbers")
-@scenario("eating_cucumbers.feature", "Eating some of the cucumbers")
-def test_eating_cucumbers():
-    pass
-
-@scenario("eating_cucumbers.feature", "Eat cucumbers")
-def test_eating_cucumbers_examples():
-    pass
+scenarios('.')
 
 @given('there are <start> cucumbers', target_fixture="cucumbers")
 @given(parsers.parse("there are {start:d} cucumbers"), target_fixture="cucumbers")
